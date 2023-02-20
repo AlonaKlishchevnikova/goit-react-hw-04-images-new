@@ -35,7 +35,7 @@ const App = () => {
           return { id, webformatURL, largeImageURL };
         }
       );
-      setImages([...images, ...newImages]);
+      setImages(prevImages=>[...prevImages, ...newImages]);
       setLoader(false);
       setLoadMore(false);
     });
